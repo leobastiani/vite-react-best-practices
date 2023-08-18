@@ -1,13 +1,14 @@
 module.exports = {
   root: true,
   env: {
+    browser: true,
     node: true,
     commonjs: true,
   },
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
@@ -17,6 +18,7 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:import/warnings",
     "plugin:tailwindcss/recommended",
+    "plugin:eslint-comments/recommended",
     "plugin:prettier/recommended",
   ],
   plugins: ["@typescript-eslint", "jsx-a11y", "simple-import-sort", "import"],
@@ -49,5 +51,8 @@ module.exports = {
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
+
+    // does not come with plugin:eslint-comments/recommended
+    "eslint-comments/no-unused-disable": "error",
   },
 };

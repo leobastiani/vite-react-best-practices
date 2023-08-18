@@ -1,11 +1,10 @@
-import { useState } from 'react';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <button className="btn">Hello daisyUI</button>
-    </div>
+    <button className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
+      Hello world
+    </button>
   );
 }
 
