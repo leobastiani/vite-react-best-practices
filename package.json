@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "@nanostores/react": "^0.7.1",
     "@tanstack/react-query": "^4.32.6",
     "nanostores": "^0.9.3",
